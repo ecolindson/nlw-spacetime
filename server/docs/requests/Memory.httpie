@@ -1,0 +1,13 @@
+// Usar a extensão Httpie para efetuar as requisições aqui documentadas Extension id marketplace: wk-j.vscode-httpie
+
+// Obter todas as memórias
+http GET localhost:3333/memories -A bearer -a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiIiwiYXZhdGFyVXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzEyODM3Njk1Nz92PTQiLCJzdWIiOiI5OGMyYTgxNC04NTlkLTRiMjYtODRkMS04NGI2MTMzOGVmMTkiLCJpYXQiOjE2ODQ2NzEyMjQsImV4cCI6MTY4NzI2MzIyNH0.o7D5R1BVmB-H6-LT9WZblc4DyW5jOxH7uDPbYLE6x4A
+
+// Obter uma memória específica
+http GET localhost:3333/memories/ef4a8962-cd81-41c8-b4fa-470bc5d38060
+
+// Criar nova memória
+http POST localhost:3333/memories content=test coverUrl=https://github.com/l1nds0n.png isPublic=1 --json
+
+// Alterar informações de memória
+http PUT http://localhost:3333/memories/aaf7c5e8-f427-40fb-8694-89e175b7f17c content=opaaaa coverUrl=https://github.com/l1nds0n.png isPublic=1 --json 

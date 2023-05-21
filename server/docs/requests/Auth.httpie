@@ -1,0 +1,5 @@
+// Usar a extensão Httpie para efetuar as requisições aqui documentadas
+// Extension id marketplace: wk-j.vscode-httpie
+
+// Criar novo usuário a partir do código gerado pelo github auth
+http POST localhost:3333/register code=e357aa000bb41237fc2a --json
